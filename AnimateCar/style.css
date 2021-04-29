@@ -1,0 +1,283 @@
+/* QAQNUSS */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.grass, .grass_2, .sky, .road {
+    position: relative;
+}
+
+.sky {
+    background-color: skyblue;
+    height: 20%;
+}
+
+.adir {
+    background-image: url(./images/Adir.jpg);
+    height: 20%;
+}
+
+.adir h1 {
+    text-align: center;
+    color: #fffb05;
+    font-weight: lighter;
+}
+.road {
+    background-color: dimgray;
+    height: 40%;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+
+.adir_2 {
+    background-image: url(./images/Adir.jpg);
+    height: 20%;
+}
+
+
+.lines {
+    border: 5px dashed #fff;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 65%;
+}
+
+.lines_2 {
+    border: 5px dashed #fff;
+    position: absolute;
+    width: 100%;
+    height: 0px;
+    top: 30%;
+}
+
+.mario {
+    position: absolute;
+    top: -75px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 3s;
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    animation-delay: 2s;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(1, 0.194, 0.57, 0.005);    
+}
+
+.luigi {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 3s;
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    animation-delay: 2s;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(1, 0.294, 0.47, 0.004);    
+}
+
+.mario2 {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 3s;
+    /* animation-fill-mode: forwards; */
+    /* animation-fill-mode: backwards; */
+    animation-delay: 2s;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(1, 0.197, 0.37, 0.0031);    
+}
+
+
+.cloud {
+    position: absolute;
+
+}
+
+.cloud:nth-child(1) {
+    width: 80px;
+    top: 10px;
+    opacity: 0.5;
+    animation: wind 25s linear infinite;
+}
+
+.cloud:nth-child(2) {
+    width: 45px;
+    top: 20px;
+    opacity: 0.7;
+    animation: wind 30s linear infinite;
+}
+
+.cloud:nth-child(3) {
+    width: 70px;
+    top: 30px;
+    opacity: 1;
+    animation: wind 37s linear infinite;
+}
+
+
+.cloud:nth-child(4) {
+    width: 60px;
+    top: 40px;
+    opacity: 1.5;
+    animation: wind 43s linear infinite;
+}
+
+.cloud:nth-child(5) {
+    width: 80px;
+    top: 50px;
+    opacity: 2;
+    animation: wind 47s linear infinite;
+}
+
+.cloud:nth-child(6) {
+    width: 75px;
+    top: 25px;
+    opacity: 2.4;
+    animation: wind 52s linear infinite;
+}
+
+.cloud:nth-child(7) {
+    width: 90px;
+    top: 15px;
+    opacity: 2.8;
+    animation: wind 59s linear infinite;
+}
+
+.cloud:nth-child(8) {
+    width: 55px;
+    top: 18px;
+    opacity: 3.2;
+    animation: wind 35s linear infinite;
+}
+
+.tree {
+    position:absolute;
+
+}
+
+.tree:nth-child(1) {
+    width: 82px;
+    top: 230px;
+    opacity: 0.5;
+    animation: wind 23s linear infinite;
+}
+ 
+.tree:nth-child(2) {
+    width: 81px;
+    top: 100px;
+    opacity: 0.5;
+    animation: wind 27s linear infinite;
+} 
+
+.tree:nth-child(3) {
+    width: 65px;
+    top: 180px;
+    opacity: 0.5;
+    animation: wind 31s linear infinite;
+} 
+
+.tree:nth-child(4) {
+    width: 80px;
+    top: 110px;
+    opacity: 0.5;
+    animation: wind 36s linear infinite;
+} 
+
+.tree:nth-child(5) {
+    width: 80px;
+    top: 160px;
+    opacity: 0.5;
+    animation: wind 41s linear infinite;
+} 
+
+.tree:nth-child(6) {
+    width: 80px;
+    top: 145px;
+    opacity: 0.5;
+    animation: wind 46s linear infinite;
+} 
+
+.tree:nth-child(7) {
+    width: 80px;
+    top: 110px;
+    opacity: 0.5;
+    animation: wind 49s linear infinite;
+} 
+
+.tree_2 {
+    position:absolute;
+
+}
+
+.tree_2:nth-child(1) {
+    width: 70px;
+    top: 550px;
+    opacity: 0.5;
+    animation: tree 22s linear infinite;
+}
+ 
+.tree_2:nth-child(2) {
+    width: 80px;
+    top: 510px;
+    opacity: 0.5;
+    animation: tree 28s linear infinite;
+} 
+
+.tree_2:nth-child(3) {
+    width: 80px;
+    top: 602px;
+    opacity: 0.5;
+    animation: tree 32s linear infinite;
+} 
+
+.tree_2:nth-child(4) {
+    width: 130px;
+    top: 530px;
+    opacity: 0.5;
+    animation: tree 36s linear infinite;
+} 
+
+.tree_2:nth-child(5) {
+    width: 80px;
+    top: 515px;
+    opacity: 0.5;
+    animation: tree 40s linear infinite;
+} 
+
+
+@keyframes drive {
+    from{ transform: translateX(-200px);}
+    to{ transform: translateX(1200px);}
+}
+
+@keyframes wind {
+    from{left:-300px;}
+    to{left:100%;}
+}
+
+@keyframes tree {
+    from{left:-300px;}
+    to{left:100%;}
+}
+
+/* QAQNUSS */
